@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>activity3</title>
+</head>
+<body>
+    <h5>array sorting in js</h5>
+    <button onclick="ascending()">ascending</button>
+    <button onclick="descending()">descending</button>
+    <button onclick="stringsort()">stringsort</button>
+    <button onclick="stringreverse()">stringreverse</button>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <script>
+        var num=[2000,200,11,7,1981];
+        var fruits=["strawberry","pineapple","peach","blackberry"];
+        function ascending(){
+            num.sort(function(a,b){return a-b});
+            document.getElementById("p1").innerHTML="ascending order" +num;
+
+        }
+        function descending(){
+                num.sort(function (a, b) { return b-a });
+                document.getElementById("p2").innerHTML = "descending order" + num;
+
+            }
+            function stringsort() {
+                    fruits.sort();
+                    document.getElementById("p3").innerHTML = fruits;
+
+                }
+                 function stringreverse() {
+                        fruits.reverse();
+                        document.getElementById("p4").innerHTML = fruits;
+
+                    }
+    </script>
+</body>
+</html>
